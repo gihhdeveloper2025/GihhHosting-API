@@ -1,0 +1,202 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gihh Hosting API</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Patrick Hand', cursive;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen p-4 sm:p-6 md:p-10">
+  <div class="max-w-3xl mx-auto space-y-6">
+    <header>
+      <h1 class="text-lg font-semibold flex items-center space-x-2">
+        <span>Gihh Hosting API</span>
+        <span class="text-xs bg-gray-300 text-gray-700 rounded-full px-2 py-0.5 font-mono">1.0</span>
+        <span class="text-xs bg-lime-500 text-white rounded-full px-2 py-0.5 font-mono">OAS 3.0</span>
+      </h1>
+      <p class="mt-3 text-base leading-relaxed max-w-prose">
+        Welcome to the Gihh Hosting Api, your gateway to streamlined and efficient application integration. Designed with simplicity and versatility in mind, Gihh Hosting Api empowers developers to effortlessly manage and interact with essential data and functionalities. Whether you’re building a web application, mobile app, or integrating with other services, Gihh Hosting Api provides a robust foundation for seamless operations.
+      </p>
+      <nav class="mt-3 space-y-1">
+        <a href="#" class="text-blue-500 hover:underline block">Contact The Developer</a>
+        <a href="#" class="text-blue-500 hover:underline block">API Development Information</a>
+      </nav>
+    </header>
+
+    <section class="bg-gray-100 p-4 rounded-md text-xs text-gray-700 font-mono">
+      <label for="servers" class="block mb-1">Servers</label>
+      <select id="servers" name="servers" class="w-full max-w-xs border border-gray-300 rounded px-2 py-1 text-xs font-mono">
+        <option>https://gihhdeveloper.vercel.app - Gihh Hosting Api</option>
+      </select>
+    </section>
+
+    <section class="space-y-6">
+      <!-- OrderKuota -->
+      <details class="border border-gray-200 rounded-md bg-white" open>
+        <summary class="cursor-pointer font-semibold p-3 select-none">ORDER KUOTA</summary>
+        <div class="space-y-2 p-3">
+          <div class="flex items-center space-x-2 bg-blue-100 rounded border border-blue-300 px-2 py-1 max-w-full">
+            <span class="text-xs font-mono font-semibold text-blue-700 bg-blue-400 rounded px-2 py-0.5 select-none">GET</span>
+            <code class="text-xs font-mono text-gray-700 truncate">/api/orkut/cekstatus</code>
+            <button aria-label="Toggle details" class="ml-auto text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="flex items-center space-x-2 bg-blue-100 rounded border border-blue-300 px-2 py-1 max-w-full">
+            <span class="text-xs font-mono font-semibold text-blue-700 bg-blue-400 rounded px-2 py-0.5 select-none">GET</span>
+            <code class="text-xs font-mono text-gray-700 truncate">/api/orkut/payment</code>
+            <button aria-label="Toggle details" class="ml-auto text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+        </div>
+      </details>
+
+      <!-- Downloader -->
+      <details class="border border-gray-200 rounded-md bg-white" open>
+        <summary class="cursor-pointer font-semibold p-3 select-none">DOWNLOADER</summary>
+        <div class="space-y-2 p-3">
+          <div class="flex items-center space-x-2 bg-blue-100 rounded border border-blue-300 px-2 py-1 max-w-full">
+            <span class="text-xs font-mono font-semibold text-blue-700 bg-blue-400 rounded px-2 py-0.5 select-none">GET</span>
+            <code class="text-xs font-mono text-gray-700 truncate">/api/downloader/splay</code>
+            <button aria-label="Toggle details" class="ml-auto text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="flex items-center space-x-2 bg-blue-100 rounded border border-blue-300 px-2 py-1 max-w-full">
+            <span class="text-xs font-mono font-semibold text-blue-700 bg-blue-400 rounded px-2 py-0.5 select-none">GET</span>
+            <code class="text-xs font-mono text-gray-700 truncate">/api/downloader/ytmp4</code>
+            <button aria-label="Toggle details" class="ml-auto text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="flex items-center space-x-2 bg-blue-100 rounded border border-blue-300 px-2 py-1 max-w-full">
+            <span class="text-xs font-mono font-semibold text-blue-700 bg-blue-400 rounded px-2 py-0.5 select-none">GET</span>
+            <code class="text-xs font-mono text-gray-700 truncate">/api/downloader/ytmp3</code>
+            <button aria-label="Toggle details" class="ml-auto text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="flex items-center space-x-2 bg-green-100 rounded border border-green-300 px-2 py-1 max-w-full">
+            <span class="text-xs font-mono font-semibold text-green-700 bg-green-400 rounded px-2 py-0.5 select-none">POST</span>
+            <code class="text-xs font-mono text-gray-700 truncate">/api/downloader/videy</code>
+            <button aria-label="Toggle details" class="ml-auto text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="flex items-center space-x-2 bg-blue-100 rounded border border-blue-300 px-2 py-1 max-w-full">
+            <span class="text-xs font-mono font-semibold text-blue-700 bg-blue-400 rounded px-2 py-0.5 select-none">GET</span>
+            <code class="text-xs font-mono text-gray-700 truncate">/api/downloader/igdl</code>
+            <button aria-label="Toggle details" class="ml-auto text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="flex items-center space-x-2 bg-blue-100 rounded border border-blue-300 px-2 py-1 max-w-full">
+            <span class="text-xs font-mono font-semibold text-blue-700 bg-blue-400 rounded px-2 py-0.5 select-none">GET</span>
+            <code class="text-xs font-mono text-gray-700 truncate">/api/downloader/threadsdl</code>
+            <button aria-label="Toggle details" class="ml-auto text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="flex items-center space-x-2 bg-blue-100 rounded border border-blue-300 px-2 py-1 max-w-full">
+            <span class="text-xs font-mono font-semibold text-blue-700 bg-blue-400 rounded px-2 py-0.5 select-none">GET</span>
+            <code class="text-xs font-mono text-gray-700 truncate">/api/downloader/douyindl</code>
+            <button aria-label="Toggle details" class="ml-auto text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="flex items-center space-x-2 bg-blue-100 rounded border border-blue-300 px-2 py-1 max-w-full">
+            <span class="text-xs font-mono font-semibold text-blue-700 bg-blue-400 rounded px-2 py-0.5 select-none">GET</span>
+            <code class="text-xs font-mono text-gray-700 truncate">/api/downloader/pinterestdl</code>
+            <button aria-label="Toggle details" class="ml-auto text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="flex items-center space-x-2 bg-blue-100 rounded border border-blue-300 px-2 py-1 max-w-full">
+            <span class="text-xs font-mono font-semibold text-blue-700 bg-blue-400 rounded px-2 py-0.5 select-none">GET</span>
+            <code class="text-xs font-mono text-gray-700 truncate">/api/downloader/mediafire</code>
+            <button aria-label="Toggle details" class="ml-auto text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="flex items-center space-x-2 bg-blue-100 rounded border border-blue-300 px-2 py-1 max-w-full">
+            <span class="text-xs font-mono font-semibold text-blue-700 bg-blue-400 rounded px-2 py-0.5 select-none">GET</span>
+            <code class="text-xs font-mono text-gray-700 truncate">/api/downloader/fbdownload</code>
+            <button aria-label="Toggle details" class="ml-auto text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="flex items-center space-x-2 bg-blue-100 rounded border border-blue-300 px-2 py-1 max-w-full">
+            <span class="text-xs font-mono font-semibold text-blue-700 bg-blue-400 rounded px-2 py-0.5 select-none">GET</span>
+            <code class="text-xs font-mono text-gray-700 truncate">/api/downloader/tiktok</code>
+            <button aria-label="Toggle details" class="ml-auto text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="flex items-center space-x-2 bg-blue-100 rounded border border-blue-300 px-2 py-1 max-w-full">
+            <span class="text-xs font-mono font-semibold text-blue-700 bg-blue-400 rounded px-2 py-0.5 select-none">GET</span>
+            <code class="text-xs font-mono text-gray-700 truncate">/api/downloader/capcut</code>
+            <button aria-label="Toggle details" class="ml-auto text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="flex items-center space-x-2 bg-blue-100 rounded border border-blue-300 px-2 py-1 max-w-full">
+            <span class="text-xs font-mono font-semibold text-blue-700 bg-blue-400 rounded px-2 py-0.5 select-none">GET</span>
+            <code class="text-xs font-mono text-gray-700 truncate">/api/downloader/spotifydl</code>
+            <button aria-label="Toggle details" class="ml-auto text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+        </div>
+      </details>
+
+      <!-- Artificial Intelligence -->
+      <details class="border border-gray-200 rounded-md bg-white" open>
+        <summary class="cursor-pointer font-semibold p-3 select-none">ARTIFICIAL INTELLIGENCE</summary>
+        <div class="space-y-2 p-3">
+          <div class="flex items-center space-x-2 bg-blue-100 rounded border border-blue-300 px-2 py-1 max-w-full">
+            <span class="text-xs font-mono font-semibold text-blue-700 bg-blue-400 rounded px-2 py-0.5 select-none">GET</span>
+            <code class="text-xs font-mono text-gray-700 truncate">/api/ai/llama3-8b-8192</code>
+            <button aria-label="Toggle details" class="ml-auto text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="flex items-center space-x-2 bg-blue-100 rounded border border-blue-300 px-2 py-1 max-w-full">
+            <span class="text-xs font-mono font-semibold text-blue-700 bg-blue-400 rounded px-2 py-0.5 select-none">GET</span>
+            <code class="text-xs font-mono text-gray-700 truncate">/api/ai/mixtral-8x7b-32768</code>
+            <button aria-label="Toggle details" class="ml-auto text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="flex items-center space-x-2 bg-blue-100 rounded border border-blue-300 px-2 py-1 max-w-full">
+            <span class="text-xs font-mono font-semibold text-blue-700 bg-blue-400 rounded px-2 py-0.5 select-none">GET</span>
+            <code class="text-xs font-mono text-gray-700 truncate">/api/ai/gemini</code>
+            <button aria-label="Toggle details" class="ml-auto text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="flex items-center space-x-2 bg-blue-100 rounded border border-blue-300 px-2 py-1 max-w-full">
+            <span class="text-xs font-mono font-semibold text-blue-700 bg-blue-400 rounded px-2 py-0.5 select-none">GET</span>
+            <code class="text-xs font-mono text-gray-700 truncate">/api/ai/deepseek</code>
+            <button aria-label="Toggle details" class="ml-auto text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+        </div>
+      </details>
+    </section>
+  </div>
+</body>
+</html>
